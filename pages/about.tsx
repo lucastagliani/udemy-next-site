@@ -26,7 +26,7 @@ const pilotPicture = css`
 `
 
 const headline = css`
-  max-width: 25ch
+  max-width: 25ch;
 `
 
 const title = css`
@@ -67,7 +67,9 @@ const footer = css`
 `
 
 const About = () => (
-  <Page>
+  <Page
+    meta={{ title: 'About', description: 'Tagliani Biography' }}
+  >
     <section css={header}>
       <Image
         css={pilotPicture}
@@ -87,27 +89,30 @@ const About = () => (
     </section>
     <section css={bio}>
       <p>
-      I’ve worked in software development for the last 8 years and I really love what I do. 
-      I see myself as an adaptable person because I have already filled positions such as quality assurance, 
-      scrum master, team leader (of a trainee team) and obviously back-end / front-end developer. 
-      The skills I am proud to have learned in the past years are the following: helping people, 
-      testing automation, designing patterns, clear communication, being a quick learner, sharing knowledge, 
-      giving sincere feedback and - the basic, but amazing - programming logic.
+        I’ve worked in software development for the last 8 years and I really
+        love what I do. I see myself as an adaptable person because I have
+        already filled positions such as quality assurance, scrum master, team
+        leader (of a trainee team) and obviously back-end / front-end developer.
+        The skills I am proud to have learned in the past years are the
+        following: helping people, testing automation, designing patterns, clear
+        communication, being a quick learner, sharing knowledge, giving sincere
+        feedback and - the basic, but amazing - programming logic.
       </p>
       <p>
-      I do not like to label myself as a C#, javascript/typescript, Angular, 
-      Java or Node.js developer because this shouldn’t be a restriction for anything, 
-      but the quoted programming languages above are (respectively) the ones that 
-      I am most used to work with. Besides this, in my point of view, 
-      drawing solutions and solving problems often are more important than 
-      technical and specific implementation on a programming language.
+        I do not like to label myself as a C#, javascript/typescript, Angular,
+        Java or Node.js developer because this shouldn’t be a restriction for
+        anything, but the quoted programming languages above are (respectively)
+        the ones that I am most used to work with. Besides this, in my point of
+        view, drawing solutions and solving problems often are more important
+        than technical and specific implementation on a programming language.
       </p>
       <p>
-      By doing technical and non-technical presentations in IT events 
-      I found a way to organize ideas clearly, improved my skill to talk in public, 
-      shared my experience, received constructive feedbacks and got out of my comfort zone. 
-      I’ve started doing this at The Developers Conference and local meetups in 2016 and 
-      I keep doing it so far, as speaker and coordinator.
+        By doing technical and non-technical presentations in IT events I found
+        a way to organize ideas clearly, improved my skill to talk in public,
+        shared my experience, received constructive feedbacks and got out of my
+        comfort zone. I’ve started doing this at The Developers Conference and
+        local meetups in 2016 and I keep doing it so far, as speaker and
+        coordinator.
       </p>
     </section>
     <section css={footer}>
